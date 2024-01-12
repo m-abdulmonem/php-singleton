@@ -32,10 +32,8 @@ class HomeController extends Controller
 //                "email" => "4@4-$i.com"
 //            ]);
 //        }
-        echo bytesToMB(memory_get_usage()) . " MB \n";
-
         //['users' => $this->model('users')->all()]
-        $users = $this->model('users')->all();
+        $users = $this->model('users')->limit(10, 0)->fetchAll('users');
         return json([
             'usage' => bytesToMB(memory_get_usage()) . " MB",
             'count' => count($users),

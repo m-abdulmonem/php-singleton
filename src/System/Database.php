@@ -270,7 +270,8 @@ class Database
             $this->table($table);
         }
         $sql = $this->fetchStatement();
-        $result = $this->query($sql,$this->bindings)->fetch();
+
+        $result = $this->query($sql,$this->bindings)->fetch(PDO::FETCH_ASSOC);
         $this->rest();
         return $result;
     }
@@ -286,7 +287,7 @@ class Database
         }
         $sql = $this->fetchStatement();
         $query = $this->query($sql,$this->bindings);
-        $results = $query->fetchAll();
+        $results = $query->fetchAll(PDO::FETCH_ASSOC);
         $this->rows = $query->rowCount();
         $this->rest();
         return $results;
@@ -339,7 +340,7 @@ class Database
      * @param int $offset
      * @return $this
      */
-    public function limit($limit, $offset)
+    public function limit($limit, $offset = null)
     {
         $this->limit = $limit;
         $this->offset =$offset;
