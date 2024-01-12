@@ -1,0 +1,21 @@
+{
+    "name": "mabdulmonem/mvc-framwork",
+    "autoload": {
+        "psr-4": {
+            "Mabdulmonem\\System\\": "src/System",
+            "Mabdulmonem\\": "App/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "mabdulmonem",
+            "email": "mabdelmonem@serv5.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

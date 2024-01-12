@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Posts;
+namespace Mabdulmonem\Controllers\Posts;
 use System\Controller;
 /**
  *

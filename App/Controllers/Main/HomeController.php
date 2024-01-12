@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers\Main;
+namespace Mabdulmonem\Controllers\Main;
 use System\Controller;
 
 class HomeController extends Controller

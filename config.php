@@ -6,3 +6,4 @@ return [
     'dbuser'   => 'root',
     'dbpass'   => ''
 ];
+

@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Models;
-use System\Model;
+
+use Mabdulmonem\System\Model;
 
 class UsersModel extends Model
 {

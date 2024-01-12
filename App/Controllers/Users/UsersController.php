@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers\Users;
+namespace Mabdulmonem\Controllers\Users;
 
 use System\Controller;
 
